@@ -25,7 +25,7 @@ To integrate MLX42 into your project, follow the steps below:
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/mlx42_combined.git
+git clone https://github.com/MliliGenes/mlx_wrapper.git
 ```
 
 ### 2. Include the Header and Link the Library
