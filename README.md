@@ -4,10 +4,10 @@ This repository contains the necessary libraries and dependencies for using MLX4
 
 ## Contents
 
-- **MLX42.h**: The header file required to use the MLX42 graphics functions
-- **libmlx42_combined.a**: A single combined static library that merges all necessary components for MLX42 and its dependencies
-- **libmlx42.a**: The original MLX42 library for use in traditional setups
-- **libmlx42_linux.a**: The Linux-specific variant of the library
+- **mlx/MLX42.h**: The header file required to use the MLX42 graphics functions
+- **mlx/libmlx42_combined.a**: A single combined static library that merges all necessary components for MLX42 and its dependencies
+- **mlx/libmlx42.a**: The original MLX42 library for use in traditional setups
+- **mlx/libglfw3.a**: The GLFW library for window/context management
 
 ## Dependencies
 
@@ -33,7 +33,7 @@ git clone https://github.com/MliliGenes/mlx_wrapper.git
 In your project, include the header:
 
 ```c
-#include "MLX42.h"
+#include "mlx/MLX42.h"
 ```
 
 Then, link against the combined library. On macOS, use the following compile flags:
@@ -41,7 +41,7 @@ Then, link against the combined library. On macOS, use the following compile fla
 #### macOS Compile Flags
 
 ```bash
-MLX_LIBRARIES = ../libmlx42_combined.a \
+MLX_LIBRARIES = mlx/libmlx42_combined.a \
     -framework Cocoa -framework OpenGL -framework IOKit -lm -ldl
 ```
 
@@ -59,7 +59,7 @@ Once the code is compiled, you can run your graphical project just like any othe
 
 ## Usage
 
-After including the `MLX42.h` header and linking with the combined library, you can start using MLX42 functions for graphics rendering. Check the official documentation or example projects for detailed usage.
+After including the `mlx/MLX42.h` header and linking with the combined library, you can start using MLX42 functions for graphics rendering. Check the official documentation or example projects for detailed usage.
 
 ## Naming of the Combined Library
 
